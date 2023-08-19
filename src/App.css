@@ -1,0 +1,428 @@
+.badge-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.square-badges {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.pill-badges {
+  grid-column: 1/-1;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+h1 {
+  font-family: Permanent Marker;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.pill-textSpan, .square-textSpan {
+  font-family: Permanent Marker;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: left;
+  color: #5E5D5D;
+}
+
+.pill-textSpan {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+button {
+  border: none;
+  font-size: 0.9rem;
+  padding: 6% 12%;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: linear 0.2s;
+}
+
+button:hover {
+  scale: 1.1;
+}
+
+.button-pill {
+  border-radius: 25px;
+}
+
+.button-square {
+  border-radius: 5px;
+}
+
+.button-gray {
+  background: #F3F4F6;
+  color: #1F2937;
+}
+
+.button-red {
+  background: #FEE2E2;
+  color: #991B1B;
+}
+
+.button-yellow {
+  background: #FEF3C7;
+  color: #92400E;
+}
+
+.button-green {
+  background: #D1FAE5;
+  color: #065F46;
+}
+
+.button-blue {
+  background: #DBEAFE;
+  color: #1E40AF;
+}
+
+.button-indigo {
+  background: #E0E7FF;
+  color: #3730A3;
+}
+
+.button-purple {
+  background: #EDE9FE;
+  color: #5B21B6;
+}
+
+.button-pink {
+  background: #FCE7F3;
+  color: #9D174D;
+}
+
+
+/* Banner */
+
+.banner-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.banners-multi {
+  display: grid;
+  gap: 5%;
+  grid-column: 1/6;
+  grid-row: 2;
+}
+
+.banners-single {
+  display: grid;
+  gap: 13%;
+  grid-column: 7/-1;
+  grid-row: 2;
+}
+
+
+.banner-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 50px);
+  max-width: 100%;
+  padding: 3%;
+  background: #D1FAE5;
+  color: #065F46;
+  cursor: pointer;
+  transition: linear 0.2s;
+}
+
+.banner-layout:hover {
+  scale: 1.05;
+}
+
+.banner-layout-success {
+  background: #D1FAE5;
+  color: #065F46;
+}
+
+.banner-layout-warning {
+  background: #FEF2F2;
+  color: #92400E;
+}
+
+.banner-layout-alert {
+  background: #FFFBEB;
+  color: #92400E;
+}
+
+.banner-layout-neutral {
+  background: #EFF6FF;
+  color: #1E40AF;
+}
+
+
+.banner-neutral > svg{
+  color: #60A5FA;
+}
+
+.banner-sucess > svg{
+  color: #34D399;
+}
+
+.banner-warning > svg{
+  color: #F87171;
+}
+
+.banner-alert > svg{
+  color: #FBBF24;
+}
+
+
+.banner-status {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.banner-status > svg {
+  height: 25px;
+  width: 25px;
+}
+
+.banner-text {
+  grid-column: 2/-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.banner-text h1 {
+  font-size: 1rem;
+  margin: 0;
+  font-family: 'Inter';
+  font-weight: 500;
+}
+
+.banner-text p {
+  font-size: 1rem;
+  margin: 0;
+  font-family: 'Inter';
+  margin-top: 2%;
+  text-align: left;
+}
+
+/* Card */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card-one {
+  grid-column: 1/6;
+  transition: linear 0.2s;
+}
+
+.card-one:hover {
+  scale: 1.03;
+}
+
+.card-two {
+  grid-column: 7/-1;
+  transition: linear 0.2s;
+}
+
+.card-two:hover {
+  scale: 1.03;
+}
+
+
+.card-layout {
+  background: #F9FAFB;
+  box-shadow: 0px 4px 25px 10px #0000001A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
+  height: 200px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.card-layout h1 {
+  font-size: 1.5rem;
+  color: #111827;
+  font-family: Inter;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.card-layout p {
+    font-size: 1rem;
+    color: #6B7280;
+    font-family: Inter;
+    font-weight: 500;
+    margin-top: 2%;
+}
+
+.card-layout > svg {
+  background: #3F75FE;
+  color: white;
+  height: 40px;
+  width: 45px;
+  padding: 1%;
+  border-radius: 0.5rem;
+  position: relative;
+  bottom: 62px;
+  box-shadow: 0px 4px 6px 3px #0000000D;
+}
+
+
+.card-background-red > svg {
+  background: #991B1B;
+}
+
+.card-background-yellow > svg {
+  background: #92400E;
+}
+
+.card-background-green > svg {
+  background: #065F46;
+}
+
+.card-background-blue > svg {
+  background: #1E40AF;
+}
+
+.card-background-purple > svg {
+  background: #5B21B6;
+}
+
+.card-background-pink > svg {
+  background: #9D174D;
+}
+
+/* Testimonial w/ images */
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.testimonial-container h1 {
+  margin-bottom: 8%;
+}
+
+
+.testimonial-layout {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #2545B8;
+  position: relative;
+  transition: linear 0.2s;
+}
+
+.testimonial-layout:hover {
+  scale: 1.03;
+}
+
+.testimonial-layout img {
+  width: 30%;
+  position: absolute;
+  bottom: -69px;
+  left: 20px;
+}
+
+.testimonial-info {
+  padding: 5% 0 5% 34%;
+}
+
+.testimonial-info > svg {
+  height: 30px;
+  width: 30px;
+  color: #FFFFFF40;
+}
+
+.testimonial-info p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.testimonial-info h3 {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.testimonial-info h2 {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  color: #FFFFFF;
+  margin: 1% 0 0 0;
+}
+
+/* Testimonial without image */
+.testimonialWithoutImage-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  background: #F9FAFB;
+  box-shadow: 0px 4px 25px 10px #0000001A;
+  padding: 5%;
+  transition: linear 0.2s;
+
+}
+
+.testimonialWithoutImage-layout:hover {
+  scale: 1.03;
+}
+
+
+.testimonialWithoutImage-layout h1 {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  color: #2E59F3;
+}
+
+.testimonialWithoutImage-layout h3 {
+  color: #111827;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+  margin: 0;
+}
+
+.testimonialWithoutImage-layout p {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #111827;
+
+}
